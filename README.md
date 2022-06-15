@@ -1,1 +1,1 @@
-<p align="center"><img src="hpublic/favicon.ico" width="400"></a></p>
+<p align="center"><img src="public/favicon.ico" width="400"></a></p>
