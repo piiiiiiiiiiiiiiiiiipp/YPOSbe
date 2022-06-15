@@ -1,0 +1,197 @@
+/* ########################################### */
+/*                 Global                      */
+/* ########################################### */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+html{
+    font-size: 14px;
+    font-family: 'Titillium Web', sans-serif;
+    background-color: #ffd7bd;
+    color:#FEFEFE;
+}
+
+
+
+.sketch-highlight{
+  position:relative;
+  padding: 0 5px;
+}
+
+.sketch-highlight:before{
+  content:"";
+  z-index:-1;
+  left:0em;
+  top:0em;
+  border-width:2px;
+  border-style:solid;
+  border-color:darkblue;
+  position:absolute;
+  border-right-color:transparent;
+  width:100%;
+  height:1em;
+  transform:rotate(2deg);
+  opacity:0.5;
+  border-radius:0.25em;
+}
+
+.sketch-highlight:after{
+  content:"";
+  z-index:-1;
+  left:0em;
+  top:0em;
+  border-width:2px;
+  border-style:solid;
+  border-color:darkblue;
+  border-left-color:transparent;
+  border-top-color:transparent;
+  position:absolute;
+  width:100%;
+  height:1em;
+  transform:rotate(-1deg);
+  opacity:0.5;
+  border-radius:0.25em;
+}
+
+
+
+/* ########################################### */
+/*           Forums.html                       */
+/* ########################################### */
+
+
+.container{
+    margin: 20px;
+    padding: 20px;
+}
+
+.subforum{
+    margin-top:20px;
+}
+
+.subforum-title{
+    background-color:orange;
+    padding: 5px;
+    border-radius: 5px;
+    margin:4px;
+}
+
+.subforum-row{
+    display: grid;
+    grid-template-columns: 7% 60% 13% 20%;
+}
+
+.subforum-column{
+    padding: 10px;
+    margin:4px;
+    border-radius: 5px;
+    background-color: orange;
+}
+
+.subforum-description *{
+    margin-block: 0;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subforum-icon i{
+    font-size: 45px;
+}
+
+.subforum-devider{
+    display: none;
+}
+
+
+/* For the smartphones */
+@media screen and (max-width: 460px) {
+    .container{
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .subforum-row{
+        display: grid;
+        grid-template-columns: 25% 75%;
+        grid-template-rows: 65% 35%;
+    }
+
+    .subforum-devider{
+        display: block;
+        border: 0;
+        height: 1px;
+        background-image: linear-gradient(to right, rgba(190, 190, 190, 0), rgba(255, 255, 255, 0.75), rgba(190, 190, 190, 0));
+    }
+
+
+
+  }
+
+/* For the tablets */
+@media screen and (min-width: 460px) and (max-width: 1024px) {
+    .container{
+        margin: 15px;
+        padding: 15px;
+    }
+
+    .subforum-row{
+        display: grid;
+        grid-template-columns: 10% 60% 10% 20%;
+    }
+
+    .subforum-icon i{
+        font-size: 35px;
+    }
+
+    html{
+        font-size: 14px;
+    }
+
+    h1{
+        font-size: 16px;
+    }
+
+  }
+/*   Header Section    */

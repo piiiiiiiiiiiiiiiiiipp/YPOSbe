@@ -76,7 +76,12 @@
                     <p>Don't have an account ? <a href="{{route('register')}}" class="fw-bold text-white">
                             {{ __('Register') }}</a></p>
                     @endif
-                    <p>©<script>document.write(new Date().getFullYear())</script> YPOS. Created with <i class="mdi mdi-heart text-danger"></i> by YPOS</p>
+
+                    @if (Route::has('doctor.login'))
+                            <p>You're our worker?<a href="{{route('doctor.login')}}" class="fw-bold text-white">
+                                    {{ __('Staff login') }}</a></p>
+                        @endif
+                    <p>©<script>document.write(new Date().getFullYear())</script> YPOS. Created with <i class="mdi mdi-heart text-danger"></i> by <a href="{{route('admin.login')}}">YPOS</a></p>
                 </div>
             </div>
         </div>

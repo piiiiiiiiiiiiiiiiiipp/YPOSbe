@@ -6,7 +6,7 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-6 col-sm-10 text-center">
-                        <a href="javascript:void(0)"><img src="images/logo-light.png" height="50" alt=""></a>
+                        <a href="javascript:void(0)"><img src="{{asset('images/logo-light.png')}}" height="50" alt=""></a>
                         <p class="mx-auto mt-sm-4">Subscribe to us and ask your question.</p>
                         <ul class="list-unstyled mb-0 mt-4 social-icon">
                             <li class="list-inline-item"><a href="https://www.instagram.com/ypos.team/"><i class="mdi mdi-instagram"></i></a></li>
@@ -21,11 +21,11 @@
                     <div class="col-lg-12">
                         <div class="text-center mt-3">
                             <ul class="list-unstyled mb-0">
-                                <li class="list-inline-item mx-lg-3 m-2"> <a class="text-white" href="#home">Home</a> </li>
-                                <li class="list-inline-item mx-lg-3 m-2"> <a class="text-white" href="#features">Benefits</a> </li>
-                                <li class="list-inline-item mx-lg-3 m-2"> <a class="text-white" href="#review">Review</a> </li>
-                                <li class="list-inline-item mx-lg-3 m-2"> <a class="text-white" href="#team">Team</a> </li>
-                                <li class="list-inline-item mx-lg-3 m-2"> <a class="text-white" href="#donate">Donate</a> </li>
+                                <li class="list-inline-item mx-lg-3 m-2"> <a class="text-white" href="{{route('/')}}">Home</a> </li>
+                                <li class="list-inline-item mx-lg-3 m-2"> <a class="text-white" href="{{route('/')}}">Benefits</a> </li>
+                                <li class="list-inline-item mx-lg-3 m-2"> <a class="text-white" href="{{route('/')}}">Review</a> </li>
+                                <li class="list-inline-item mx-lg-3 m-2"> <a class="text-white" href="{{route('/')}}">Team</a> </li>
+                                <li class="list-inline-item mx-lg-3 m-2"> <a class="text-white" href="{{route('/')}}">Donate</a> </li>
                             </ul>
                         </div>
                     </div>
