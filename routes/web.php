@@ -59,4 +59,6 @@ Route::view('/forum/cat/abuse','forum.cat.abuse')->name('cat.abuse');
     Route::view('/forum/cat/suicide','forum.cat.suicide')->name('cat.suicide');
     Route::view('/specialists','specialists')->name('specialists');
 
+Route::get('/appoint', [ContactController::class,'appoint']);
+Route::post('/appoint',[ContactController::class,'sendAppoint'])->name('appoint');
 

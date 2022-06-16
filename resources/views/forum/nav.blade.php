@@ -35,6 +35,12 @@
                             <li class="nav-item"> <a class="nav-link active" href="{{route('news')}}">Articles</a> </li>
 
                         @endif
+                        @if(Route::is('specialists'))
+                            <li class="nav-item"> <a class="nav-link" href="{{route('home')}}">Home</a> </li>
+                            <li class="nav-item"><a class="nav-link active" href="{{route('specialists')}}">Specialists</a> </li>
+                            <li class="nav-item"> <a class="nav-link" href="{{route('forum')}}">Forum</a> </li>
+
+                        @endif
 
                 </ul>
                 <!-- Button trigger modal -->
